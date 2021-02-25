@@ -1,7 +1,6 @@
 import { Request, Response } from 'express';
-import { SurveysRepository } from '../repositories/SurveysRepository';
 import { getCustomRepository } from 'typeorm';
-import { Survey } from '../models/Survey';
+import { SurveysRepository } from '../repositories/SurveysRepository';
 
 class SurveysController {
   async create(request: Request, response: Response){
@@ -28,4 +27,4 @@ class SurveysController {
   }
 }
 
-export { SurveysController }
+export { SurveysController };
